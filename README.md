@@ -1,28 +1,38 @@
 # Mobile Phone Repair System
 
-## Description
-This is a Java desktop application for managing mobile phone repairs.
-It uses SQL for creating tables (DDL) and inserting data (DML).
+## Overview
+The **Mobile Phone Repair System** is a Java Swing desktop application for managing mobile phone repairs.  
+It includes login functionality, tracks customer repairs, and uses a MySQL database for storing data.
+
+---
 
 ## Features
-- User login page
-- Add / Update / Delete repair records
-- Admin access
+- Admin and user login
+- Add / Update / Delete customer and phone repair records
+- Search and filter repairs
+- Database-driven (MySQL)
+
+---
 
 ## Requirements
-- Java 8+
-- NetBeans IDE (optional)
+- Java JDK 8 or higher
+- NetBeans IDE (optional but recommended)
 - MySQL database
 
-## How to Run
-1. Clone the repository:
-   git clone https://github.com/May-ashley/Mobile-Phone-Repair-System.git
-2. Open the project in NetBeans or your Java IDE.
-3. Create a new database in MySQL.
-4. Run the SQL scripts in the `src` folder to create tables and insert data.
-5. Update database connection in the code if needed.
-6. Run the main Java program.
+---
 
-## Default Admin Login
-- Username: A111
-- Password: #111#
+## Project Structure
+- `src/` → Java source code  
+- `nbproject/` → NetBeans configuration  
+- `sql/phonedb.sql` → Full database dump  
+- `README.md` → Project instructions
+
+---
+
+## Database Setup
+
+1. Open **MySQL Command Line** or **MySQL Workbench**  
+2. Run the SQL dump to create the database and all tables:
+
+```sql
+SOURCE sql/phonedb.sql;
